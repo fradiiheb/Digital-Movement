@@ -65,7 +65,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3095eeed3190e6247b8d44df30953ed5, type: 3}
       propertyPath: m_Name
-      value: timyMascot
+      value: timyMascot Variant
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3095eeed3190e6247b8d44df30953ed5, type: 3}
       propertyPath: m_IsActive
@@ -81,21 +81,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3095eeed3190e6247b8d44df30953ed5, type: 3}
---- !u!1 &7659081546842681251 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3095eeed3190e6247b8d44df30953ed5, type: 3}
-  m_PrefabInstance: {fileID: 7389263254784283378}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &873431494
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7659081546842681251}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7cfb6e95e6205746af3b4ec764ec4b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 0}

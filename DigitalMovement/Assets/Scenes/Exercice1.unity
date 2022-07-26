@@ -1112,6 +1112,7 @@ MonoBehaviour:
   - {fileID: 266956915}
   CurrentQuestText: {fileID: 1633857473}
   MascotObject: {fileID: 708109049}
+  NextQuestionBTN: {fileID: 1337227233}
 --- !u!4 &626159968
 Transform:
   m_ObjectHideFlags: 0
@@ -1139,7 +1140,6 @@ GameObject:
   - component: {fileID: 685914333}
   - component: {fileID: 685914332}
   - component: {fileID: 685914331}
-  - component: {fileID: 685914336}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1156,7 +1156,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 685914330}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e3b1e01754cead4a842fccfbf3c5ae6, type: 3}
+  m_Script: {fileID: 11500000, guid: a2b5fd9639b892a4fb46f16eed43beba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &685914332
@@ -1250,18 +1250,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &685914336
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 685914330}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe26803d2c8fb45478e576aa8799df27, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &688063734
 GameObject:
   m_ObjectHideFlags: 0

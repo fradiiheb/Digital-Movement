@@ -10,6 +10,10 @@ public class ButtonBehaviour : MonoBehaviour
     public void openHome() {
         SceneManager.LoadScene("Home");
     }
+    public void LoadARCamScene()
+    {
+        SceneManager.LoadScene("AR");
+    } 
 
     public void openChapters() {
         SceneManager.LoadScene("Chapters");
@@ -44,6 +48,9 @@ public class ButtonBehaviour : MonoBehaviour
     }public void LoadLevels()
     {
         SceneManager.LoadScene("levels");
+    }
+    public void LoadExercice(string ExerciceName){
+        SceneManager.LoadScene(ExerciceName);
     }
     public void LoadExercice1()
     {

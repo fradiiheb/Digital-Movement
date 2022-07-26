@@ -15,7 +15,6 @@ public class WinLoseAnimation : MonoBehaviour
     {
         animator.SetBool("IsJumping", true);
         int random = Random.Range(0, 2);
-        Debug.Log(random);
         animator.SetInteger("DanceInt", random);
         animator.SetBool("IsDancing", true);
     }
