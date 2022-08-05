@@ -33,7 +33,7 @@ public class ItemSlot : MonoBehaviour, IDropHandler
             }
             test = true;
             
-            verifDragDrop.verif();
+            //verifDragDrop.verif();
            
      //   }
     }

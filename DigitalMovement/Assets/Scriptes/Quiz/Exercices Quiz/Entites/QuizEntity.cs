@@ -6,16 +6,12 @@ public class QuizEntity
     public List<string> Answers;
     public int correctAnswer;
     
-     public enum Langauges
- {
-     
-     Arabic,
-    
-     Francais,
-     
-     English
- }
- public Langauges Langauge = Langauges.Arabic;  
+ public QuizEntity(string Question, List<string> Answers, int correctAnswer)
+    {
+        this.Question = Question;
+        this.Answers = Answers;
+        this.correctAnswer = correctAnswer;
+    }
 }
 
 

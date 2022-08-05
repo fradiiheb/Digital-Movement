@@ -20,22 +20,25 @@ public class QuizManager : MonoBehaviour
     // public Text scoreTxt;
     int totalQuestions;
     int questionsCount;
-    //  public int score = 0 ;
+      public ExerciceScore exericescore ;
 
 
     private void Start()
     {
         
+        
+    }
+    public void StartQuiz()
+    {
         totalQuestions = QnA.Count;
         //    GOPanel.SetActive(false);
         //   GifPanel.SetActive(false);
         // QuizPanel.SetActive(true);
         generateQuestion();
     }
-
     public void correct()
     {
-        //   score += 1 ;
+        exericescore.Score += 1 ;
         QnA.RemoveAt(currentQuestion);
         MascotObject.SetActive(true);
         MascotObject.GetComponent<WinLoseAnimation>().WinAnimation();
@@ -93,7 +96,7 @@ public class QuizManager : MonoBehaviour
         
         foreach (GameObject option in options)
         {
-            if (option.GetComponent<Image>().color != Color.white)
+           // if (option.GetComponent<Image>().color != Color.white)
                 
             option.SetActive(false);
             option.GetComponent<Button>().enabled = true;
