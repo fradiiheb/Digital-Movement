@@ -14,6 +14,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
     public Transform ParentHolder;
     public bool InAHolder=false;
     public Vector3 InitialPosition;
+    Vector3 mousepos;
     private void Awake(){
         rectTransform = GetComponent<RectTransform>();
         InitialPosition=GetComponent<RectTransform>().anchoredPosition;
@@ -29,6 +30,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
     public void OnDrag(PointerEventData eventData){
        // Debug.Log("OnDrag");
         rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
+       
         if (item != null)
         {
             item.test = false;
@@ -43,10 +45,12 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
        // Debug.Log("OnEndDrag");
         canvasGroup.alpha = 1f;
         canvasGroup.blocksRaycasts = true;
-        if(!inPos)
-        rectTransform.anchoredPosition=InitialPosition;
-         rectTransform.anchorMin=new Vector2(0.5f,0.5f);
-        rectTransform.anchorMax=new Vector2(0.5f,0.5f);
+        if (!inPos)
+        {
+            rectTransform.anchoredPosition = InitialPosition;
+        /*    rectTransform.anchorMin = new Vector2(0, 0);
+            rectTransform.anchorMax = new Vector2(1, 1);*/
+        }
 
     }
 

@@ -17,11 +17,12 @@ public class ArrowDragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandl
     public int answer = 1;
     public Canvas canvas;
     public ArrowSlot arrowSlot = null;
-
+    public CanvasGroup[] canvasGroups;
      private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
+    //    canvasGroups = FindObjectsOfType<CanvasGroup>();
 
     }
 
@@ -44,16 +45,21 @@ public class ArrowDragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandl
             arrowSlot.answertest = false;
             arrowSlot = null;
         }
-        Debug.Log("OnBeginDrag");
-        canvasGroup.alpha = .6f;
-        canvasGroup.blocksRaycasts = false;
+      //  Debug.Log("OnBeginDrag");
+      foreach(CanvasGroup canv in canvasGroups)
+        {
+            canv.alpha = .6f;
+            canv.blocksRaycasts = false;
+        }
+       // canvasGroup.alpha = .6f;
+       // canvasGroup.blocksRaycasts = false;
 
         pointList.Clear();
     }
 
     public void OnDrag(PointerEventData eventData)
     {
-        Debug.Log("OnDrag");
+      //  Debug.Log("OnDrag");
         rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
         arrowLine.enabled = true;
         DrawArrow(eventData);
@@ -62,9 +68,14 @@ public class ArrowDragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandl
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        Debug.Log("OnEndDrag");
-        canvasGroup.alpha = 1f;
-        canvasGroup.blocksRaycasts = true;
+      //  Debug.Log("OnEndDrag");
+        /*canvasGroup.alpha = 1f;
+        canvasGroup.blocksRaycasts = true;*/
+        foreach (CanvasGroup canv in canvasGroups)
+        {
+            canv.alpha = 1;
+            canv.blocksRaycasts = true;
+        }
         if (!done)
         {
             InitArrow();
@@ -81,7 +92,7 @@ public class ArrowDragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandl
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        Debug.Log("OnPointerDown");
+       // Debug.Log("OnPointerDown");
     }
 
 

@@ -20,8 +20,8 @@ public class ArrowSlot : MonoBehaviour, IDropHandler
     public void OnDrop(PointerEventData eventData)
     {
         Debug.Log("OnDrop");
-        if (eventData.pointerDrag != null)
-        {
+        //if (eventData.pointerDrag != null) {
+
 
 
             eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
@@ -36,7 +36,7 @@ public class ArrowSlot : MonoBehaviour, IDropHandler
             {
                 answertest = false;
             }
-        }
+        //}
     }
 }
 
