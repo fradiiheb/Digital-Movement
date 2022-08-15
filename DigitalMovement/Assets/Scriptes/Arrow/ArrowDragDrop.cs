@@ -17,12 +17,13 @@ public class ArrowDragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandl
     public int answer = 1;
     public Canvas canvas;
     public ArrowSlot arrowSlot = null;
-    public CanvasGroup[] canvasGroups;
+    public ArrowDragDrop[] arrowDrags;
+    public List<CanvasGroup> canvasGroups;
      private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
-    //    canvasGroups = FindObjectsOfType<CanvasGroup>();
+        arrowDrags = FindObjectsOfType<ArrowDragDrop>();
 
     }
 
@@ -33,9 +34,14 @@ public class ArrowDragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandl
         mouseWorld = new Vector3();
         arrowheadSize = 0.08f;
         startPosition = rectTransform.anchoredPosition;
-       
+        foreach(ArrowDragDrop arrowDrag in arrowDrags)
+        {
+            canvasGroups.Add(arrowDrag.GetComponent<CanvasGroup>());
+        }
 
-    
+
+
+
     }
 
     public void OnBeginDrag(PointerEventData eventData)
