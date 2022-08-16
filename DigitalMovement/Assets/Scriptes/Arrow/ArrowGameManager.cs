@@ -20,6 +20,7 @@ public class ArrowGameManager : MonoBehaviour
             if (g != null)
             {
                 arrowDragDrops.Add(g.GetComponent<ArrowDragDrop>());
+                
             }
         }
     }

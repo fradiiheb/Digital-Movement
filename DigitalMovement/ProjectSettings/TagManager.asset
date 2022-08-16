@@ -6,6 +6,7 @@ TagManager:
   tags:
   - ArrowSlot
   - ArrowDrag
+  - SoloSlot
   layers:
   - Default
   - TransparentFX

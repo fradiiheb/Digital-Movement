@@ -10,8 +10,9 @@ public class ItemSlot : MonoBehaviour, IDropHandler
     public DragDrop[] Items;
    
     public VerifDragDrop verifDragDrop;
-    
-    
+    [Header("Solo Drag and Drop")]
+    public bool soloSpot;
+    public GameObject theSpot;
     void Start()
     {
         Items = FindObjectsOfType<DragDrop>();
@@ -19,6 +20,13 @@ public class ItemSlot : MonoBehaviour, IDropHandler
     }
     public void OnDrop(PointerEventData eventData){
         //Debug.Log("OnDrop");
+        if (soloSpot && (transform.childCount > 0))
+        {
+            eventData.pointerDrag.GetComponent<DragDrop>().InAHolder = false;
+            Debug.Log("morethenone");
+            return;
+        }
+        //theSpot = eventData.pointerDrag;
         eventData.pointerDrag.transform.SetParent(this.transform);
         eventData.pointerDrag.GetComponent<DragDrop>().InAHolder=true;
        // if(eventData.pointerDrag){
