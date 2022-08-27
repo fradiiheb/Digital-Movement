@@ -48,9 +48,12 @@ public class ArrowDragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandl
     {
         if (arrowSlot != null)
         {
+            arrowSlot.haveItem = false;
             arrowSlot.answertest = false;
             arrowSlot = null;
+            
         }
+       
       //  Debug.Log("OnBeginDrag");
       foreach(CanvasGroup canv in canvasGroups)
         {

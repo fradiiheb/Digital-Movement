@@ -9,7 +9,8 @@ public class ArrowSlot : MonoBehaviour, IDropHandler
     private GameObject master;
     // private GameMaster gameMaster;
     public bool answertest = false;
-
+    public bool soloSpot;
+    public bool haveItem;
     private void Start()
     {
       //  master = GameObject.FindGameObjectWithTag("GameMaster");
@@ -21,8 +22,12 @@ public class ArrowSlot : MonoBehaviour, IDropHandler
     {
         Debug.Log("OnDrop");
         //if (eventData.pointerDrag != null) {
-
-
+        if (soloSpot && haveItem == true)
+        {
+            eventData.pointerDrag.GetComponent<ArrowDragDrop>().done = false;
+            return;
+        }
+            
 
             eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
             eventData.pointerDrag.GetComponent<ArrowDragDrop>().done = true;
@@ -36,6 +41,7 @@ public class ArrowSlot : MonoBehaviour, IDropHandler
             {
                 answertest = false;
             }
+        haveItem = true;
         //}
     }
 }

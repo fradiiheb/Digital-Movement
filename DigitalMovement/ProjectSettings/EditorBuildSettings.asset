@@ -26,4 +26,34 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Exercice3.unity
     guid: 73a082fc17ad7554c8ce6d85e52dfde1
+  - enabled: 1
+    path: Assets/MiniGame/Unblock/Scenes/NewLevel1.unity
+    guid: c1026626bc62cd34eb6cdda6d3dd3603
+  - enabled: 1
+    path: Assets/MiniGame/Unblock/Scenes/NewLevel2.unity
+    guid: 67996aadd1d2a624cb7d647e4bba64b7
+  - enabled: 1
+    path: Assets/MiniGame/Unblock/Scenes/NewLevel3.unity
+    guid: 9c10280f8de9ba2459ab4b2b13b4b499
+  - enabled: 1
+    path: Assets/MiniGame/Memory/Scenes/MemorygameScene.unity
+    guid: 96979f1cb5b204b4fa46825ec6b427ab
+  - enabled: 1
+    path: Assets/MiniGame/Memory/Scenes/MemorymenuScene.unity
+    guid: 5b3a2a0ca08a3af40bd2dcd470cfc84d
+  - enabled: 1
+    path: Assets/MiniGame/prjt2048/Scenes/main2048.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/MiniGame/prjt2048/Scenes/StartUI2048.unity
+    guid: 948e898fb76f1714384447853a02b3ed
+  - enabled: 1
+    path: Assets/MiniGame/ZiedColorHouse/Scenes/ColorHouse.unity
+    guid: 01d55b59315e5194dabf31f0bc266bca
+  - enabled: 1
+    path: Assets/MiniGame/TresureMapIbrahim/Scenes/TresureMap.unity
+    guid: 6ba889c617c3bdc44b961aa944c9560d
+  - enabled: 1
+    path: Assets/MiniGame/NotSoAngryBirdIbrahim/Scenes/AngryBird1.unity
+    guid: 3a7ab32176ac6c647ba1274737b67276
   m_configObjects: {}
