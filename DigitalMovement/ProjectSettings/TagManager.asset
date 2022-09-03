@@ -10,6 +10,9 @@ TagManager:
   - Canvas
   - Treasure
   - Start
+  - Answer
+  - Bird
+  - Correct Answer
   layers:
   - Default
   - TransparentFX

@@ -6,54 +6,78 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Home.unity
+    path: Assets/Project/Scenes/Home.unity
     guid: 8ffc322480b691f4c89b7bc9d50fc894
   - enabled: 1
-    path: Assets/Scenes/Chapters.unity
-    guid: 0c184a8c30bb777498444739a02fc7b1
+    path: Assets/Project/Scenes/Chapters.unity
+    guid: d928418d01eae874aa7e47c567ff2e28
   - enabled: 1
-    path: Assets/Scenes/subjects.unity
+    path: Assets/Project/Scenes/subjects.unity
     guid: 1ee12457b33c69645b0e23570a0503bd
   - enabled: 1
-    path: Assets/Scenes/levels.unity
+    path: Assets/Project/Scenes/levels.unity
     guid: d6af40433e1bcdc4f935a8ac76895c7a
   - enabled: 1
-    path: Assets/Scenes/Exercice1.unity
+    path: Assets/Project/Scenes/Profile.unity
+    guid: fb2f077656ad8dd4a92006f0c0dfc8f0
+  - enabled: 1
+    path: Assets/Project/Scenes/Shop.unity
+    guid: c850ee8c3b14cc8459e7e186857cf567
+  - enabled: 1
+    path: Assets/Project/Scenes/Exercice1.unity
     guid: bb5bfd04cd58a3a4e992d752222a9df1
   - enabled: 1
-    path: Assets/Scenes/Exercice2.unity
+    path: Assets/Project/Scenes/Exercice2.unity
     guid: 70235838f88f56b4c89bb3bba4bfa330
   - enabled: 1
-    path: Assets/Scenes/Exercice3.unity
+    path: Assets/Project/Scenes/Exercice3.unity
     guid: 73a082fc17ad7554c8ce6d85e52dfde1
   - enabled: 1
-    path: Assets/MiniGame/Unblock/Scenes/NewLevel1.unity
+    path: "Assets/Project/Scenes/3eme ann\xE9e/3-01.unity"
+    guid: d39ad261e335bae4c885ab9a0468a4e5
+  - enabled: 1
+    path: "Assets/Project/Scenes/3eme ann\xE9e/3-02.unity"
+    guid: ca03088e74e822d48b30989b9aba8354
+  - enabled: 1
+    path: "Assets/Project/Scenes/3eme ann\xE9e/3-03.unity"
+    guid: 283bd701e1e4d9342afcb321dbaddecf
+  - enabled: 1
+    path: "Assets/Project/Scenes/3eme ann\xE9e/3-4.unity"
+    guid: 302647af68a27994e84a0fb5a8821428
+  - enabled: 1
+    path: Assets/Project/MiniGame/Unblock/Scenes/NewLevel1.unity
     guid: c1026626bc62cd34eb6cdda6d3dd3603
   - enabled: 1
-    path: Assets/MiniGame/Unblock/Scenes/NewLevel2.unity
+    path: Assets/Project/MiniGame/Unblock/Scenes/NewLevel2.unity
     guid: 67996aadd1d2a624cb7d647e4bba64b7
   - enabled: 1
-    path: Assets/MiniGame/Unblock/Scenes/NewLevel3.unity
+    path: Assets/Project/MiniGame/Unblock/Scenes/NewLevel3.unity
     guid: 9c10280f8de9ba2459ab4b2b13b4b499
   - enabled: 1
-    path: Assets/MiniGame/Memory/Scenes/MemorygameScene.unity
+    path: Assets/Project/MiniGame/Memory/Scenes/MemorygameScene.unity
     guid: 96979f1cb5b204b4fa46825ec6b427ab
   - enabled: 1
-    path: Assets/MiniGame/Memory/Scenes/MemorymenuScene.unity
+    path: Assets/Project/MiniGame/Memory/Scenes/MemorymenuScene.unity
     guid: 5b3a2a0ca08a3af40bd2dcd470cfc84d
   - enabled: 1
-    path: Assets/MiniGame/prjt2048/Scenes/main2048.unity
+    path: Assets/Project/MiniGame/prjt2048/Scenes/main2048.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/MiniGame/prjt2048/Scenes/StartUI2048.unity
+    path: Assets/Project/MiniGame/prjt2048/Scenes/StartUI2048.unity
     guid: 948e898fb76f1714384447853a02b3ed
   - enabled: 1
-    path: Assets/MiniGame/ZiedColorHouse/Scenes/ColorHouse.unity
-    guid: 01d55b59315e5194dabf31f0bc266bca
+    path: Assets/Project/MiniGame/ZiedColorHouse1/Scenes/MainMenuColorHouse.unity
+    guid: 2435bf18155f75c468d6dd2209989658
   - enabled: 1
-    path: Assets/MiniGame/TresureMapIbrahim/Scenes/TresureMap.unity
+    path: Assets/Project/MiniGame/ZiedColorHouse1/Scenes/ColorHouse1.unity
+    guid: af5885da70eb6b4499011ba3aa4d9529
+  - enabled: 1
+    path: Assets/Project/MiniGame/ZiedColorHouse1/Scenes/ColorHouse2.unity
+    guid: ebbc0e6e6ff113b40b92ed08d4726666
+  - enabled: 1
+    path: Assets/Project/MiniGame/TresureMapIbrahim/Scenes/TresureMap.unity
     guid: 6ba889c617c3bdc44b961aa944c9560d
   - enabled: 1
-    path: Assets/MiniGame/NotSoAngryBirdIbrahim/Scenes/AngryBird1.unity
+    path: Assets/Project/MiniGame/NotSoAngryBirdIbrahim/Scenes/AngryBird1.unity
     guid: 3a7ab32176ac6c647ba1274737b67276
   m_configObjects: {}

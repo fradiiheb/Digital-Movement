@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "974433175459",
+    "project_id": "digimove-99274",
+    "storage_bucket": "digimove-99274.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:974433175459:android:221d1ea28de3d46b843c16",
+        "android_client_info": {
+          "package_name": "com.DigiMove"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "974433175459-g3790k7rvvi9skcsdmuifmiu2mn7t3me.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4UVBJMlb8YyX9XDm_NaBIKKEGIuyXIJQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "974433175459-g3790k7rvvi9skcsdmuifmiu2mn7t3me.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

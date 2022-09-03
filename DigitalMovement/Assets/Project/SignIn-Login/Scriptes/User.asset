@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3edef41792ec9354e89483add9e032cf, type: 3}
+  m_Name: User
+  m_EditorClassIdentifier: 
+  user:
+    index: 1
+    Nom: Fradi
+    Prenom: Iheb
+    Niveau: 3eme
+    Telephone: 50178464
+    Email: iheb_fradi@live.fr
+    Gouvernorat: Sousse
+    Ville: "Kal\xE2a K\xE9bira"
+    School: "Epi School (Sahloul\r)"
+    Photo: Xsqdsq Dsq.png
+    Password: KQF7V7gOqAyGZDUzvzXXVA==
+    TotalGold: 150
